@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#131313</color>
+    <color name="colorPrimaryDark">#131313</color>
+    <color name="colorAccent">#00F57C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSubtitle">#909090</color>
+    <color name="background">#353435</color>
+    <color name="md_grey_900">#212121</color>
+    <color name="md_blue_100">#BBDEFB</color>
+
+
+
+<!--    <color name="colorPrimary">#6C63FF</color>-->
+<!--    <color name="colorPrimaryDark">#6C63FF</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+
+    <color name="drawerText">#2D313D</color>
+    <color name="boldText">#2D313D</color>
+    <color name="iconColor">#2D313D</color>
+    <color name="mainText">#2D313D</color>
+    <color name="textAlt">#8D8F97</color>
+    <color name="mainBackground">#ffffff</color>
+    <color name="float_btn_color">#fdd835</color>
+    <color name="semiTransparentBlack">#6e232323</color>
+    <color name="back_arrow">#6e232323</color>
+    <color name="home_menu">#6e232323</color>
+
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6C63FF</color>
+    <color name="colorPrimaryDark">#2D313D</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="drawerText">#00F57C</color>
+    <color name="iconColor">#ffffff</color>
+    <color name="boldText">#00F57C</color>
+    <color name="mainText">#ffffff</color>
+    <color name="textAlt">#8D8F97</color>
+    <color name="mainBackground">#2D313D</color>
+    <color name="float_btn_color">#212121</color>
+    <color name="semiTransparentBlack">#6e232323</color>
+    <color name="back_arrow">#FFFFFF</color>
+    <color name="home_menu">#FFFFFF</color>
+
+</resources>

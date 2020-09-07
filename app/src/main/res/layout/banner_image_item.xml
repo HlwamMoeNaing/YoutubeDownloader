@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_5adp"
+        android:padding="@dimen/_8adp"
+        android:layout_margin="@dimen/_5adp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200adp"
+        app:cardCornerRadius="@dimen/_8adp"
+        android:elevation="@dimen/_12adp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <androidx.appcompat.widget.AppCompatImageView
+               android:id="@+id/image_banner"
+               android:src="@drawable/ronaldo"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="centerCrop"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"/>
+
+           <androidx.appcompat.widget.AppCompatImageView
+               android:layout_width="50dp"
+               android:layout_height="@dimen/_50adp"
+               app:layout_constraintStart_toStartOf="@id/image_banner"
+               app:layout_constraintEnd_toEndOf="@id/image_banner"
+               app:layout_constraintTop_toTopOf="@id/image_banner"
+               app:layout_constraintBottom_toBottomOf="@id/image_banner"
+               android:src="@drawable/play"/>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

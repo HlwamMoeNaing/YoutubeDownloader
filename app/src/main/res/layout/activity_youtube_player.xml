@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView-->
+<!-- -->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainBackground"
+        tools:context=".activity.YoutubePlayerActivity">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/a_you_player"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toTopOf="@+id/constreintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:showFullScreenButton="true"
+            app:showYouTubeButton="false" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constreintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/mainBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/a_you_player">
+
+
+            <TextView
+                android:id="@+id/youtube_title"
+                android:layout_width="@dimen/_180adp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10adp"
+                android:layout_marginTop="@dimen/_5adp"
+                android:layout_marginEnd="146dp"
+                android:layout_marginBottom="@dimen/_5adp"
+                android:maxLines="1"
+                android:text="@string/video_title"
+                android:textColor="@color/mainText"
+                android:textSize="@dimen/_15asp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/share_btn"
+                android:layout_width="@dimen/_20adp"
+                android:layout_height="@dimen/_20adp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="@dimen/_25adp"
+                android:src="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="@+id/youtube_title"
+                app:layout_constraintEnd_toStartOf="@+id/download_btn"
+                app:layout_constraintStart_toEndOf="@+id/youtube_title"
+                app:layout_constraintTop_toTopOf="@+id/youtube_title" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/download_btn"
+                android:layout_width="@dimen/_20adp"
+                android:layout_height="@dimen/_20adp"
+                android:layout_marginEnd="@dimen/_15adp"
+                android:clickable="true"
+                android:src="@drawable/ic_file_download"
+                app:layout_constraintBottom_toBottomOf="@+id/share_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/share_btn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5adp"
+            android:id="@+id/tv_related"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10adp"
+            android:text="@string/related_songs"
+            android:textColor="@color/mainText"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constreintLayout" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_youtube_activity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5adp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_related" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--</ScrollView>-->
